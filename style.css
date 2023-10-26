@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
+button{
+    background: linear-gradient(purple,orange);
+    padding: 14px , 24px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button.showmodal
+button p{
+    color: white;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text1{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Flavors', cursive;;
+    color: orange;
+}
+.text2{
+    color: orange;
+    font-size: 48px;
+     font-family: 'Flavors', cursive;
+}
+.overlay{
+    height: 1000px;
+    width: 500px;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    top: -800px;
+    left: -250px;
+    opacity: 0;
+    pointer-events: none;
+}
+section.active .overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+section.active .showmodal{
+    display: none;
+}
+
+.popup{
+    background-color: purple;
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    top: 500px;
+    opacity: 0;
+    pointer-events: none;
+}
+section.active .popup{
+    opacity: 1;
+    pointer-events: auto;
+    }
+.img1{
+    height:1000px;
+    width: 450px;
+}
+
+h2{
+    font-family: 'Flavors', cursive;;
+}
+.absolute{
+    position: absolute;
+    
+}
+
+.gap{
+    gap: 10px;
+}
+.relative{
+    position: relative;
+
+}
+.flex{
+    display: flex;
+}
+.ctr-row{
+    justify-content: center;
+}
+.size{
+    top: 0;
+    right: 0;
+}
+.btnsize{
+    top: 800px;
+}
+.Size{
+    top: -300px;
+    left: -200px;
+}
