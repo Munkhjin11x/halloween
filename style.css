@@ -62,7 +62,7 @@ section.active .popup{
     pointer-events: auto;
     }
 .img1{
-    height:1000px;
+    height:800px;
     width: 450px;
 }
 
@@ -92,7 +92,7 @@ h2{
     right: 0;
 }
 .btnsize{
-    top: 800px;
+    top: 600px;
 }
 .Size{
     top: -300px;
