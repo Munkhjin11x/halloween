@@ -1,102 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Flavors&display=swap');
-button{
-    background: linear-gradient(purple,orange);
-    padding: 14px , 24px;
-    width: 200px;
-    height: 50px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-button.showmodal
-button p{
-    color: white;
-    font-size: 16px;
-}
-body{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.text1{
-    text-align: center;
-    font-size: 48px;
-    font-family: 'Flavors', cursive;;
-    color: orange;
-}
-.text2{
-    color: orange;
-    font-size: 48px;
-     font-family: 'Flavors', cursive;
-}
-.overlay{
-    height: 1000px;
-    width: 450px;
-    background-color: rgb(0, 0, 0, 0.3);
-    position: absolute;
-    top: -800px;
-    left: -220px;
-    opacity: 0;
-    pointer-events: none;
-}
-section.active .overlay{
-    opacity: 1;
-    pointer-events: auto;
-}
-section.active .showmodal{
-    display: none;
-}
-button :hover {
-    opacity: 0,5;
-}
-.popup{
-    background-color: purple;
-    border-radius: 20px;
-    width: 300px;
-    height: 230px;
-    color: white;
-    text-align: center;
-    top: 500px;
-    opacity: 0;
-    pointer-events: none;
-}
-section.active .popup{
-    opacity: 1;
-    pointer-events: auto;
-    }
-.img1{
-    height:800px;
-    width: 100vw;
+@import url("https://fonts.googleapis.com/css2?family=Flavors&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2{
-    font-family: 'Flavors', cursive;;
-}
-.absolute{
-    position: absolute;
-    
+body {
+  background-color: #101010;
 }
 
-.gap{
-    gap: 10px;
+.text1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: "Flavors", cursive;
+  color: purple;
 }
-.relative{
-    position: relative;
 
+.text2 {
+  color: orange;
+  font-size: 24px;
+  font-family: "Flavors", cursive;
+  text-align: center;
 }
-.flex{
-    display: flex;
+
+.hero {
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.whatspaper.com/wp-content/uploads/2022/09/hd-halloween-wallpaper-whatspaper-19.jpg");
+  background-size: cover 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
-.ctr-row{
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.openModal {
+  /* margin-top: 600px; */
+  margin-left: 70px;
+  background: linear-gradient(purple, orange);
+  padding: 14px, 24px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 200px;
+}
+.card {
+    width: 500px;
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
     justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/012/791/537/original/halloween-background-template-with-castle-pumpkin-and-moon-halloween-backdrop-for-sale-promotion-banner-poster-social-media-feed-invitation-event-wallpaper-in-purple-color-vector.jpg);
+  }
+h1 {
+  margin-top: 50px;
 }
-.size{
-    top: 0;
-    right: 0;
+.closeModal {
+  margin-top: 10px;
+  margin-left: 150px;
+  background: linear-gradient(purple, orange);
+  padding: 14px, 24px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
 }
-.btnsize{
-    top: 600px;
+.overlay {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: #10101080;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.Size{
-    top: -300px;
-    left: -150px;
+@media only screen and (max-width: 450px) {
+  .hero {
+    /* width: 450px; */
+    /* background-image: none; */
+    background-size: cover;
+  }
+  .card{
+    max-width: 300px;
+  }
+  .text2{
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .closeModal{
+    width: 150px;
+    height: 50px;
+    font-size: 12px; margin-bottom: 170px;
+    margin-left: 75px;
+  }
 }
