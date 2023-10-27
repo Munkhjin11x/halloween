@@ -13,7 +13,7 @@ body {
   text-align: center;
   font-size: 48px;
   font-family: "Flavors", cursive;
-  color: purple;
+  color: orange;
 }
 
 .text2 {
@@ -78,6 +78,7 @@ h1 {
   cursor: pointer;
   color: white;
   font-size: 16px;
+  padding: 5px;
 }
 .overlay {
   display: none;
@@ -91,6 +92,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  opacity: 1;
 }
 @media only screen and (max-width: 450px) {
   .hero {
